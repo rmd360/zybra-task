@@ -14,23 +14,40 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# User Management Table
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A simple web application built with **Next.js**, **Shadcn**, **TanStack Query**, and **TanStack Table** that fetches user data from a public API, displays it in a table with sorting, filtering, search, and pagination functionality.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Data Fetching**: Fetch user data from `https://jsonplaceholder.typicode.com/users` using **TanStack Query**.
+- **Sorting**: Sort the table by columns like `Name`, `Email`.
+- **Filtering**: Filter data based on columns (e.g., by `Name`).
+- **Search**: Global search functionality to filter across all columns.
+- **Pagination**: Supports pagination with dynamic routing for each page.
+- **UI**: Designed with **Shadcn** (Radix UI components) for a clean and responsive interface.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Shadcn](https://github.com/shadcn/ui) (Radix UI components)
+- **Data Fetching**: [TanStack Query](https://tanstack.com/query)
+- **Table Management**: [TanStack Table](https://tanstack.com/table)
+- **API**: [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com/users)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation Instructions
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure that you have the following tools installed:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Node.js](https://nodejs.org/) (>= 16.x)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/rmd360/zybra-task.git
+cd zybra-task
